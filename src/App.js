@@ -5,7 +5,7 @@ import RouteData from './Routes';
 function App() {
   return (
 
-    <BrowserRouter>
+    <BrowserRouter basename={process.env.PUBLIC_URL}>
       <RouteData></RouteData>
     </BrowserRouter>
   );
